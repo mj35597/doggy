@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body id="mybody" background="1.jpg">
+	<br>
+	<br>
+	<center>
+	<h1 id="text" ><font color="#F15F5F">Which dog do you want to touch?</h1>
+	<br>
+	<img src="puppy.jpg" id="puppy" width="20%" height="20%">
+	<br>
+	<br>
+	<img src="bull.jpg" id="bull" width="20%" height="20%">
+	</center>
+
+	<audio id="psound">
+		<source src="barking.mp3">
+
+	<audio id="dsound">
+		<source src="love.m4a">
+  	</audio>
+
+	
+	<script type="text/javascript">
+		puppy.onclick = function(){
+
+			puppy.style.display = "none";
+			bull.style.display = "none";
+			text.style.display = "none";
+
+			psound.play();
+		
+			mybody.style.background = "url('savage.gif')";
+			mybody.style.backgroundSize = "500px auto";}
+			</script>
+
+	<script type="text/javascript">
+		bull.onclick = function(){
+			puppy.style.display = "none";
+			bull.style.display = "none";
+			text.style.display = "none";
+
+			dsound.play();
+		
+			mybody.style.background = "url('doggy.gif')";
+			mybody.style.backgroundSize = "500px auto";}
+		</script>
+		
+
+</body>
+</html>
